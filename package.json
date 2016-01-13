@@ -40,6 +40,14 @@
   "repository": "git@github.com:1egoman/hackfrost.git",
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "test": "gulp",
+    "start": "node lib/index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-static": "^1.0.3",
+    "mongoose": "^4.3.5",
+    "request": "^2.67.0",
+    "underscore": "^1.8.3"
   }
 }
