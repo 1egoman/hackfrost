@@ -14,3 +14,9 @@ body{
   font-size: 35px;
   font-family: 'Raleway', sans-serif;
 }
+#pf-button{
+  display: inline-block;
+  padding: 15px 20px;
+  background: #5CB0CC;
+  color: #000
+}
