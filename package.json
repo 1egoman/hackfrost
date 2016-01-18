@@ -1,0 +1,53 @@
+{
+  "name": "snowday",
+  "version": "0.0.0",
+  "description": "Snow day calculator?",
+  "homepage": "",
+  "author": {
+    "name": "1egoman",
+    "email": "rsg1egoman@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    ""
+  ],
+  "devDependencies": {
+    "eslint-config-xo-space": "^0.7.0",
+    "babel-eslint": "^4.1.6",
+    "eslint-plugin-babel": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-babel": "^5.1.0",
+    "del": "^2.0.2",
+    "babel-core": "^5.5.0",
+    "isparta": "^3.0.3"
+  },
+  "eslintConfig": {
+    "extends": "xo-space/esnext",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "git@github.com:1egoman/hackfrost.git",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp",
+    "start": "node lib/index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-static": "^1.0.3",
+    "mongoose": "^4.3.5",
+    "request": "^2.67.0",
+    "underscore": "^1.8.3"
+  }
+}
