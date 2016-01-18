@@ -12,11 +12,15 @@ $( document ).ready(function() {
       console.log(position.coords.longitude)
 
       $.ajax({
-        url: 'https://rnwmfoszsf.localtunnel.me/run/43.158679/-76.332709',
+        url: '/run/43.158679/-76.332709',
         method: "get",
       })
       .done(function(data) {
-        alert(data)
+        if (data.error) {
+          $("span.percent").html(data.error)
+        } else {
+          $("span.percent").html(data.percent*100)
+        }
       })
       .fail(function() {
         alert("Ajax failed to fetch data")
