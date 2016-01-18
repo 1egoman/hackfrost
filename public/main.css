@@ -1,5 +1,5 @@
 <!-- listing -->
-@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 body{
   background: #ffffff;
 }
@@ -12,5 +12,5 @@ body{
   padding-left: 10px;
   padding-top: 10px;
   font-size: 35px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Raleway', sans-serif;
 }
