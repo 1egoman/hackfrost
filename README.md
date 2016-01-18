@@ -1,19 +1,17 @@
-# snowday [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Snow day calculator?
-
-## Installation
-
-```sh
-$ npm install --save snowday
-```
+# Snow day calculator!
+> Made for Hack Frost. See http://hackfrost.devpost.com.
 
 ## Usage
+```bash
+npm start
 
-```js
-var snowday = require('snowday');
-
-snowday('Rainbow');
+curl http://localhost:5000/run/:lat/:lng
+{
+  "percent": 0.2,
+  "label": "School will be open."
+}
 ```
+
 ## License
 
  © [1egoman]()
