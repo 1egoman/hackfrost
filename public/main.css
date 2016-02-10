@@ -1,0 +1,32 @@
+body{
+  background: #ffffff;
+}
+#navigation{
+  background: #5CB0CC;
+  height: 80px;
+}
+#logo{
+  Float:left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 35px;
+  font-family: 'Lobster';
+}
+#slogan{
+  padding-top:10px;
+  Float:right;
+  padding-right:10px;
+}
+#main-action{
+  font-size: 20px;
+  font-family: 'Montserrat';
+}
+#footer{
+  font-family: 'Montserrat';
+  font-size: 10px;
+}
+.percent {
+  background: lightgrey;
+  padding: 20px;
+  margin: 10px;
+}
