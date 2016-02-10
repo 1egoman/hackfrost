@@ -2,30 +2,25 @@ function getuserlocation(callback) {
   navigator.geolocation.getCurrentPosition(function(position) {
     callback(position)
   }, function(error){
-    console.log("error", error)
+    $(".percent").html("Please give us those geolocation permissions!");
   })
 }
-$( document ).ready(function() {
-    console.log( "ready!" );
-    getuserlocation(function(position){
-      console.log(position.coords.latitude)
-      console.log(position.coords.longitude)
-
-      $.ajax({
-        url: '/run/43.158679/-76.332709',
-        method: "get",
-      })
-      .done(function(data) {
-        if (data.error) {
-          $("span.percent").html(data.error)
-        } else {
-          $("span.percent").html(data.percent*100)
-        }
-      })
-      .fail(function() {
-        alert("Ajax failed to fetch data")
-      })
-
-
-    })
+$(document).ready(function() {
+  console.log( "ready!" );
+  getuserlocation(function(position){
+    $.ajax({
+      url: '/run/' + position.coords.latitude + '/' + position.coords.longitude,
+      method: "get",
+    }).done(function(data) {
+      if (data.error) {
+        $(".percent").html(data.error);
+      } else {
+        $(".percent").html(
+          data.label + "\n" + (data.percent*100).toFixed(2) + "%"
+        );
+      }
+    }).fail(function() {
+      $(".percent").html("We can't contact our servers. Maybe reload? IDK...");
+    });
+  });
 });
