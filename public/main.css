@@ -1,29 +1,33 @@
-body{
+body {
   background: #ffffff;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
-#navigation{
+#navigation {
   background: #5CB0CC;
   height: 80px;
 }
-#logo{
+small {
+  font-size: 10px;
+}
+#logo {
   Float:left;
   padding-left: 10px;
   padding-top: 10px;
   font-size: 35px;
-  font-family: 'Lobster';
 }
-#slogan{
+#slogan {
   padding-top:10px;
   Float:right;
   padding-right:10px;
 }
-#main-action{
+#main-action {
   font-size: 20px;
-  font-family: 'Montserrat';
+  max-width: 800px;
+  margin: 20px auto;
 }
-#footer{
-  font-family: 'Montserrat';
+#footer {
   font-size: 10px;
+  text-align: center;
 }
 .percent {
   background: lightgrey;
