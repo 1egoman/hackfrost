@@ -8,23 +8,41 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <center>
     <nav id="navigation">
       <b id="logo">Snow Day Generator</b>
       <i id="slogan">May the odds be ever in your favor </i>
     </nav>
-  </center>
-  <center>
-  <div id="main-action">
-    <p>Your snowday likelyness percent is...</p>
+    <div id="main-action">
+      <p>Your snowday likeliness percent is...</p>
       <p><div class="percent">Loading...</div></p>
-      *This generator does not take into consideration the frickleness of your superintendet
+      <small>
+        *This generator does not take into consideration the fickleness of your
+        superintendent. Yea, superintendents are fickle - you got a problem with
+        that?
+      </small>
+
+      <h2>Hold up - where does the number come from?</h2>
+      <p>
+        Using your location, we fetch weather data from weather underground and
+        use the current day, the high and low temperature, the average wind
+        speed, and the daily and instantaneous snowfall. We plug your data into
+        a neural network trained with existing snow day data from schools in
+        Syracuse, Rochester, and Buffalo.
+      </p>
+      <h2>Why is this better than other snow day calculators?</h2>
+      <p>
+        Because deep learning is a new thing and some pretty amazing problems
+        can be solved using technologies such as neural nets. For example,
+        Google uses neural networks to do the heavy lifting behind web translations.
+      </p>
+      <h2>Let me see the code.</h2>
+      <p>
+        <a href="//github.com/1egoman/hackfrost">It's here.</a>
+      </p>
     </div>
-  </center>
-        <br><br><br>
     <div id="footer">
       <p>Ryan Gaus &amp; Will Guisbond for <a href="http://hackfrost.devpost.com/">Hackfrost</a></p>
-    </center>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
 
